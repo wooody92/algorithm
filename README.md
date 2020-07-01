@@ -16,7 +16,11 @@
 - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/backjoon/seven_dwarf_2309/Main.java)
 - 난쟁이 7명 키의 합이 100이하가 아니고 100이다.
 
+3. [1476 - 날짜 계산](https://www.acmicpc.net/problem/1476)
 
+
+
+<br><br>
 
 ## Programmers
 
