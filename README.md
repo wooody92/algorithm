@@ -20,6 +20,13 @@
 
 
 
+4. [9095 - 1,2,3 더하기](https://www.acmicpc.net/problem/9095)
+
+- Solution
+- 점화식
+- DP
+- Bottom-up & Top-down
+
 <br><br>
 
 ## Programmers
