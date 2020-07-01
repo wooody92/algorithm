@@ -18,14 +18,16 @@
 
 3. [1476 - 날짜 계산](https://www.acmicpc.net/problem/1476)
 
-
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/backjoon/date_calculate_1476/Main.java)
+- 최소공배수
 
 4. [9095 - 1,2,3 더하기](https://www.acmicpc.net/problem/9095)
 
-- Solution
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/backjoon/add_one_two_three_9095/Main.java)
 - 점화식
 - DP
 - Bottom-up & Top-down
+- 배열 동적으로 초기화 시 런타임 에러 발생
 
 <br><br>
 
