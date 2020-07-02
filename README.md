@@ -39,6 +39,11 @@
 
 ## Programmers
 
-1. [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
+1. [42576 - 완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/unfinishedplayer/Solution.java)
+
+2. [42840 - 모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
+
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/mock_exam/Solution.java)
+- 확장성 없이 하드코딩 한 것 같다. 
