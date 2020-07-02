@@ -29,6 +29,12 @@
 - Bottom-up & Top-down
 - 배열 동적으로 초기화 시 런타임 에러 발생
 
+5. [14501 - 퇴사](https://www.acmicpc.net/problem/14501)
+
+- [Solution]
+- DP
+- 왜 틀린지 모르겠음. 다음에 다시풀어보기.
+
 <br><br>
 
 ## Programmers
