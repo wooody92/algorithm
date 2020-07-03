@@ -12,13 +12,10 @@ public class Solution {
             result[i] = arr1[i] | arr2[i];
             answer[i] = "";
             int count = 0;
-            while (true) {
+            for (int j = 0; j < n; j++) {
                 answer[i] = (result[i] % 2 == 1 ? "#" : " ") + answer[i];
-                count++;
-                if (result[i] == 1) {
-                    break;
-                }
                 result[i] = result[i] >> 1;
+                count++;
             }
 
             /**
@@ -41,6 +38,7 @@ public class Solution {
     }
 
     /**
+     * 코드는 깔끔하지만 속도는 느려진다.
      * Integer.toBinaryString 로 2인수 변환 할 수 있다.
      * String.format 로 String 자리수 고정 할 수 있다.
      */
