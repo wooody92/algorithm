@@ -1,4 +1,4 @@
-package programmers.mock_exam;
+package programmers.mock_exam_42840;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -47,3 +47,10 @@
 
 - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/mock_exam/Solution.java)
 - 확장성 없이 하드코딩 한 것 같다. 
+
+3. [42862 - 체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
+
+- [Solution]
+- Greedy
+- 그리디 사용은 잘 모르겠고, 전체 순회하여 조건으로 필터링하여 풀었다.
+
