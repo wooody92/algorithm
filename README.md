@@ -58,3 +58,9 @@
 
 - [Solution]
 - `Arrays.copyOfRange`, `Arrays.sort` 등 잘 사용하지 않았던 배열 관련 메서드들을 알게 되었다.
+
+5. [12901 - 2016](https://programmers.co.kr/learn/courses/30/lessons/12901)
+
+- [Solution]
+- 나머지를 이용한 간단한 문제
+
