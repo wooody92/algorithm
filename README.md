@@ -64,3 +64,9 @@
 - [Solution]
 - 나머지를 이용한 간단한 문제
 
+6. [17681 - 비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
+
+- [Solution]
+- 주어진 길이 `n` 보다 2진수 자릿수가 적을 경우 0은 생략되기 때문에 가장 앞자리에 공백추가되지 않는 경우를 고려해야한다.
+- `Integer.toBinaryString` 로 2진수로 변환 할 수 있다.
+- `String.format` 로 자릿수와 타입 고정 할 수 있다.
