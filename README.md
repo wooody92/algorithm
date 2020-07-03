@@ -54,3 +54,7 @@
 - Greedy
 - 그리디 사용은 잘 모르겠고, 전체 순회하여 조건으로 필터링하여 풀었다.
 
+4. [42748 - k번째 수](https://programmers.co.kr/learn/courses/30/lessons/42748)
+
+- [Solution]
+- `Arrays.copyOfRange`, `Arrays.sort` 등 잘 사용하지 않았던 배열 관련 메서드들을 알게 되었다.
