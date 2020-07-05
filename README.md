@@ -75,4 +75,9 @@
 
 - [Solution]
 
-8. 
+8. [12903 - 가운데 글자 가져오기](https://programmers.co.kr/learn/courses/30/lessons/12903)
+
+- [Solution]
+- `String.subString` 내장함수로 간단하게 풀이 가능하다.
+
+9. []
