@@ -94,3 +94,10 @@
 - `for loop` : `10ms` -> `Gauss` : `0.5ms`
 - 간단한 알고리즘에도 수학공식을 적용하면 효율을 향상 시킬 수 있다는 것을 알게 되었다.
 
+11. [12915 - 문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
+
+- [Solution]
+- `Comparator Interface` 사용이 미숙하여 구글링 했다. 다시 풀어보기.
+- `Arrays.sort()` 에 람다식으로 조건을 넣을 수 있다.
+- `Comparator & Arrays.sort` 의 원리를 알아야 아래 내장 함수를 활용 할 수 있겠다.
+- `Comparator - compareTo`, `Charactor.compare`  
