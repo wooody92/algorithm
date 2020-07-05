@@ -80,4 +80,11 @@
 - [Solution]
 - `String.subString` 내장함수로 간단하게 풀이 가능하다.
 
-9. []
+9. [12910 - 나누어 떨어지는 숫자 배열](https://programmers.co.kr/learn/courses/30/lessons/12910)
+
+- [Solution]
+- `for loop` 사용 : 코드가 길어지나, 속도가 빠르다.
+- `Stream` 사용 : 직관적이고 코드가 간결하나, 속도가 느리다.
+- 알고리즘 테스트에서는 어떤게 유리할까?
+
+10. 
