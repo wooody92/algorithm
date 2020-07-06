@@ -109,5 +109,11 @@
 13, [12917 - 문자열 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917)
 
 - [Solution]
-- 문자열 sorting 시 `StringBuilder`를 사용하면 시간을 많이 단축 시킬 수 있다.
+- `String` 문자열 로직 처리 시 (`Sorting` 등) `StringBuilder`를 사용하면 시간을 많이 단축 시킬 수 있다.
 
+14. [12918 - 문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)
+
+- [Solution]
+- `ASCII code`를 이용하여 풀었다.
+- `char`는 `int` 형 변환 하면 `ascii code`를 확인 할 수 있다.
+- 정규식으로 푸는 방법도 있다.
