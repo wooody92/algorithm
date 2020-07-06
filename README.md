@@ -106,5 +106,8 @@
 
 - [Solution]
 
-13, [ ]()
+13, [12917 - 문자열 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917)
+
+- [Solution]
+- 문자열 sorting 시 `StringBuilder`를 사용하면 시간을 많이 단축 시킬 수 있다.
 
