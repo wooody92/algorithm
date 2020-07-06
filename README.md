@@ -100,4 +100,11 @@
 - `Comparator Interface` 사용이 미숙하여 구글링 했다. 다시 풀어보기.
 - `Arrays.sort()` 에 람다식으로 조건을 넣을 수 있다.
 - `Comparator & Arrays.sort` 의 원리를 알아야 아래 내장 함수를 활용 할 수 있겠다.
-- `Comparator - compareTo`, `Charactor.compare`  
+- `Comparator - compareTo`, `Charactor.compare`
+
+12. [12916 - 문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916)
+
+- [Solution]
+
+13, [ ]()
+
