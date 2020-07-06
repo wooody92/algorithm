@@ -142,3 +142,12 @@
 
 - [Solution]
 
+19. [12928 - 약수의 합](https://programmers.co.kr/learn/courses/30/lessons/12928)
+
+- [Solution]
+- `n`의 약수는 `n/2`보다 클 수 없으므로 루프 범위를 줄일 수 있다.
+
+20. [12926 - 시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
+
+- [Solution]
+
