@@ -64,7 +64,7 @@
 - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/date_of_2016_12901/Solution.java)
 - 나머지를 이용한 간단한 문제
 
-6. [17681 - 비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
+6. [17681 - 비밀지도 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17681)
 
 - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/secret_map_kakao_17681/Solution.java)
 - 주어진 길이 `n` 보다 2진수 자릿수가 적을 경우 0은 생략되기 때문에 가장 앞자리에 공백추가되지 않는 경우를 고려해야한다.
@@ -150,3 +150,11 @@
 20. [12926 - 시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
 
 - [Solution]
+- `char`는 자동으로 `ascii` 치환되기 때문에 굳이 `ascii` 테이블 검색해서 숫자로 작성할 필요가 없다.
+- 대문자는 대문자로, 소문자는 소문자로만 돌아가기 때문에 분기처리 하였다.
+
+21. [64061 - 크레인 인형뽑기 게임 : kakao 2019](https://programmers.co.kr/learn/courses/30/lessons/64061)
+
+- [Solution]
+- `List`를 이용하여 풀었는데, `Stack`을 이용하여 풀이하면 더 좋을 것 같아 동일 한 코드를 `Stack` 구조로 변경하였다. 
+
