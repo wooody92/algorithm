@@ -41,11 +41,11 @@
 
 1. [42576 - 완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
-- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/unfinishedplayer/Solution.java)
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/unfinished_player_42576/Solution.java)
 
 2. [42840 - 모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
 
-- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/mock_exam/Solution.java)
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/mock_exam_42840/Solution.java)
 - 확장성 없이 하드코딩 한 것 같다. 
 
 3. [42862 - 체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
@@ -73,30 +73,30 @@
 
 7. [12906 - 같은 숫자는 싫어](https://programmers.co.kr/learn/courses/30/lessons/12906)
 
-- [Solution]
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/number_compression_12906/Solution.java)
 
 8. [12903 - 가운데 글자 가져오기](https://programmers.co.kr/learn/courses/30/lessons/12903)
 
-- [Solution]
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/get_center_string_12903/Solution.java)
 - `String.subString` 내장함수로 간단하게 풀이 가능하다.
 
 9. [12910 - 나누어 떨어지는 숫자 배열](https://programmers.co.kr/learn/courses/30/lessons/12910)
 
-- [Solution]
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/divisor_array_12910/Solution.java)
 - `for loop` 사용 : 코드가 길어지나, 속도가 빠르다.
 - `Stream` 사용 : 직관적이고 코드가 간결하나, 속도가 느리다.
 - 알고리즘 테스트에서는 어떤게 유리할까?
 
 10. [12912 - 두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
 
-- [Solution]
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/sum_of_integer_12912/Solution.java)
 - 일정 구간의 정수를 순차적으로 더하는 경우 가우스 공식을 사용하여 시간을 단축 시키도록 한다.
 - `for loop` : `10ms` -> `Gauss` : `0.5ms`
 - 간단한 알고리즘에도 수학공식을 적용하면 효율을 향상 시킬 수 있다는 것을 알게 되었다.
 
 11. [12915 - 문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
 
-- [Solution]
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/custom_strings_sorting_12915/Solution.java)
 - `Comparator Interface` 사용이 미숙하여 구글링 했다. 다시 풀어보기.
 - `Arrays.sort()` 에 람다식으로 조건을 넣을 수 있다.
 - `Comparator & Arrays.sort` 의 원리를 알아야 아래 내장 함수를 활용 할 수 있겠다.
@@ -104,27 +104,27 @@
 
 12. [12916 - 문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916)
 
-- [Solution]
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/number_of_py_12916/Solution.java)
 
 13, [12917 - 문자열 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917)
 
-- [Solution]
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/descending_sort_12917/Solution.java)
 - `String` 문자열 로직 처리 시 (`Sorting` 등) `StringBuilder`를 사용하면 시간을 많이 단축 시킬 수 있다.
 
 14. [12918 - 문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)
 
-- [Solution]
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/number_filtering_12918/Solution.java)
 - `ASCII code`를 이용하여 풀었다.
 - `char`는 `int` 형 변환 하면 `ascii code`를 확인 할 수 있다.
 - 정규식으로 푸는 방법도 있다.
 
 15. [12919 - 서울에서 김서방 찾기](https://programmers.co.kr/learn/courses/30/lessons/12919)
 
-- [Solution]
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/finding_kim_12919/Solution.java)
 
 16. [12921 - 소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/12921)
 
-- [Solution]
+- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/number_of_prime_12921/Solution.java)
 - 주어진 수 `N` 보다 작은 소수로만 나누는 조건으로 했을 경우 효율성 검사에서 실패했다.
 - 구글링으로 아래 수학적 조건을 이용하여 효율성 검사를 통과하였다. 수학적 지식이 없었으면 효율성에서 계속 떨어졌을 것 같다.
 - 주어진 수 `N`이 `2`부터 `N 제곱근` 범위에서 나누었을 때 `0`이 되는 수가 있다면, 그 수는 소수가 아니다. 즉, 이 범위내 나누어지는 수가 없다면 그 수는 소수이다.
@@ -150,4 +150,3 @@
 20. [12926 - 시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
 
 - [Solution]
-
