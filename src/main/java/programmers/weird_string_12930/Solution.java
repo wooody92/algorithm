@@ -1,31 +1,24 @@
 package programmers.weird_string_12930;
 
-import java.util.Arrays;
-
 public class Solution {
 
     public String solution(String s) {
-        String[] words = s.split(" ");
-
-        for (int i = 0; i < words.length; i++) {
-            char[] c = words[i].toCharArray();
-            for (int j = 0; j < c.length; j++) {
-                c[j] = (char) (j % 2 == 0 ? c[j] - 32 : c[j]);
+        char[] c = s.toCharArray();
+        boolean flag = true;
+        for (int i = 0; i < c.length; i++) {
+            if (c[i] == ' ') {
+                flag = true;
+                continue;
             }
-            words[i] = String.valueOf(c);
+            if (flag) {
+                c[i] = Character.toUpperCase(c[i]);
+                flag = false;
+                continue;
+            }
+            c[i] = Character.toLowerCase(c[i]);
+            flag = true;
         }
-        System.out.println(Arrays.toString(words));
-        return stringArrayConverter(words);
-    }
-
-    private String stringArrayConverter(String[] strings) {
-        StringBuilder sb = new StringBuilder();
-        for (String string : strings) {
-            sb.append(string);
-            sb.append(" ");
-        }
-        sb.deleteCharAt(sb.length() - 1);
-        return sb.toString();
+        return String.valueOf(c);
     }
 
     public static void main(String[] args) {

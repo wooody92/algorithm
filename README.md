@@ -161,4 +161,5 @@
 22. [12930 - 이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)
 
 - [Solution]
-- 
+- 문제에 주어진 입출력 에제가 하나밖에 없고 고려해야 할 제한조건이 정확하게 제시되어 있지 않아 시간이 조금 걸렸다.
+- `Character.toUpperCase()`를 이용하여 대소문자로 바로 변환 가능하다.
