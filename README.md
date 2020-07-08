@@ -158,3 +158,7 @@
 - [Solution]
 - `List`를 이용하여 풀었는데, `Stack`을 이용하여 풀이하면 더 좋을 것 같아 동일 한 코드를 `Stack` 구조로 변경하였다. 
 
+22. [12930 - 이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)
+
+- [Solution]
+- 
