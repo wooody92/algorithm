@@ -173,3 +173,8 @@
 
 - [Solution]
 - `StringBuilder.reverse`로 풀 수 있었지만, 수학적으로 풀어보았다.
+
+25. [12933 - 정수 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12933)
+
+- [Solution]
+- 
