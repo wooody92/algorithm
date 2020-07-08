@@ -177,4 +177,13 @@
 25. [12933 - 정수 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12933)
 
 - [Solution]
+
+26. [12934 - 정수 제곱근 판별](https://programmers.co.kr/learn/courses/30/lessons/12934)
+
+- [Solution]
+- `double`에서 ` int`로 타입 캐스팅 시 데이터 손실 주의하자.
+
+27. [12935 - 제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
+
+- [Solution]
 - 
