@@ -168,3 +168,8 @@
 
 - [Solution]
 - 가독성은 형변환 방식에 비해 떨어지지만, 나누기 산수계산으로 처리하면 효율은 조금 더 좋다.
+
+24. [12932 - 자연수 뒤집어 배열로 만들기](https://programmers.co.kr/learn/courses/30/lessons/12932)
+
+- [Solution]
+- `StringBuilder.reverse`로 풀 수 있었지만, 수학적으로 풀어보았다.
