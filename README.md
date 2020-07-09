@@ -186,4 +186,6 @@
 27. [12935 - 제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
 
 - [Solution]
-- 
+- `Stream` 사용 할 수 있으나 느리므로 `for loop`로 해결했다.
+
+28. []()
