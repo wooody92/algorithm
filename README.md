@@ -192,3 +192,7 @@
 
 - [Solution]
 
+29. [67256 - 키패드 누르기 : kakao 2020](https://programmers.co.kr/learn/courses/30/lessons/67256)
+
+- [Solution]
+- 
