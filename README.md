@@ -195,4 +195,19 @@
 29. [67256 - 키패드 누르기 : kakao 2020](https://programmers.co.kr/learn/courses/30/lessons/67256)
 
 - [Solution]
-- 
+- 다시 풀기
+
+30. [12940 - 최대공약수와 최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12940)
+
+- [Solution]
+
+- 유클리드 호제법을 이용하여 재귀로 풀 수 있다.
+
+  ```
+  n을 m으로 나눈 나머지를 n이라 하면 (단 n>m), n과 m의 최대공약수는 m과 r의 최대공약수와 같다.
+  ```
+
+- 최대공약수 (`gcd`) : `유클리드 호제법`
+
+- 최소공배수 (`lcm`) : `(a * b) / gcd(a, b)`
+
