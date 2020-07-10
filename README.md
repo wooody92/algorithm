@@ -218,3 +218,8 @@
 - [Solution]
 - 재귀를 이용하여 해결했다.
 
+32. [12944 - 평균 구하기](https://programmers.co.kr/learn/courses/30/lessons/12944)
+
+- [Solution]
+
+33. []()
