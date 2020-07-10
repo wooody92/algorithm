@@ -9,6 +9,9 @@ public class Solution {
         return answer;
     }
 
+    /**
+     *  최대 공약수는 두 수 작은 수나 두 수의 차보다 작다.
+     */
     private int getGCD(int n, int m) {
         int result = 1;
         int max = Math.abs(n - m) < Math.min(n, m) ? Math.abs(n - m) : Math.min(n, m);
