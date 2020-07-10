@@ -225,4 +225,8 @@
 33. [12947 - 하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947)
 
 - [Solution]
-- 
+
+34. [12948 - 핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948)
+
+- [Solution]
+
