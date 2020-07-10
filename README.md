@@ -230,3 +230,8 @@
 
 - [Solution]
 
+35. [12950 - 행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950)
+
+- [Solution]
+- 2차원 배열을 동적으로 초기화 해줄 때, 전체 `column`에 대해 선언해주고 반복 루프를 이용하여 각각의 `row`에 대해 초기화 해준다.
+
