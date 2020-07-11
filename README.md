@@ -240,3 +240,8 @@
 - [Solution]
 - `int` 자료형끼리 연산을 진행 후 해당 결과값을 `long` 자료형에 넣어주면 연산한 결과값이 `int` 범위보다 클 때 데이터 손실이 발생 할 수 있다.
 - 연산 시 임시로 형변환을 해주거나, `long` 자료형을 이용하여 덧셈 연산으로 해결한다.
+
+37. [12969 - 직사각형 별찍기](https://programmers.co.kr/learn/courses/30/lessons/12969)
+
+- [Solution]
+
