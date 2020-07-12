@@ -249,3 +249,10 @@
 
 - [Solution]
 
+39 . [17682 - 다트 게임 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17682)
+
+- [Solution]
+- 이런 규칙이 없는 문제는 `if - loop` 의 `depth`를 줄이고 깔끔한 코딩 스타일로 작성할 수는 없을까하고 고민했지만 다른 사람의 풀이를 보니 비슷했다.
+- `10점`의 조건이 데이터 파싱에 있어 조건을 추가하게 만들었다.
+
+40. 
