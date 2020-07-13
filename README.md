@@ -195,7 +195,14 @@
 29. [67256 - 키패드 누르기 : kakao 2020](https://programmers.co.kr/learn/courses/30/lessons/67256)
 
 - [Solution]
-- 다시 풀기
+
+- 로컬 테스트 시 log 결과값은 잘 나오는데 프로그래머스 테스트 시 결과값이 다르게 나와서 실패한다. 이유를 잘 모르겠다.
+
+- 현재 좌, 우 위치에서 목표 번호까지의 거리를 구하는 로직은 구글링으로 참고했다.
+
+  ```
+  https://0pencoding.github.io/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2020/07/03/%ED%82%A4%ED%8C%A8%EB%93%9C%EB%88%84%EB%A5%B4%EA%B8%B0_level1.html
+  ```
 
 30. [12940 - 최대공약수와 최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12940)
 

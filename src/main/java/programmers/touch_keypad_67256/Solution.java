@@ -1,79 +1,76 @@
 package programmers.touch_keypad_67256;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Solution {
 
     /**
-     * 손이 중앙으로 갈 수 있는 걸 고려해야 한다.
+     * 로컬 테스트 시 log 결과값은 잘 나오는데 프로그래머스 테스트 시 결과값이 다르게 나와서 실패한다.
+     * 현재 좌, 우 위치에서 목표 번호까지의 거리를 구하는 로직은 구글링으로 참고했다.
      */
     public String solution(int[] numbers, String hand) {
         StringBuilder sb = new StringBuilder();
         String left = "L";
         String right = "R";
-        int leftPosition = 10; // '*'
-        int rightPosition = 12; // '#'
-        hand = hand == "left" ? left : right;
-
-        List<Integer> bucket = Arrays.asList(2, 5, 8, 11);
+        int leftPosition = 10;
+        int rightPosition = 12;
 
         for (int i = 0; i < numbers.length; i++) {
-            System.out.println(i + "루프 입력값 : " + numbers[i]);
-            System.out.println("left position : " + leftPosition);
-            System.out.println("right position : " + rightPosition);
-
-            if (numbers[i] == 1 || numbers[i] == 4 || numbers[i] == 7) {
-                sb.append(left);
-                leftPosition = numbers[i];
-                System.out.println("--------------------------");
-                continue;
-            }
-            if (numbers[i] == 3 || numbers[i] == 6 || numbers[i] == 9) {
-                sb.append(right);
-                rightPosition = numbers[i];
-                System.out.println("--------------------------");
-                continue;
-            }
-
             if (numbers[i] == 0) {
                 numbers[i] = 11;
             }
-
-            if (bucket.indexOf(leftPosition + 1) == bucket.indexOf(rightPosition - 1)) {
-                sb.append(hand);
-                if (hand == left) {
-                    leftPosition = numbers[i];
-                } else {
-                    rightPosition = numbers[i];
-                }
-                System.out.println("--------------------------");
+            if (numbers[i] % 3 == 1) { // number[i] = 1, 3, 7
+                sb.append(left);
+                leftPosition = numbers[i];
+                continue;
+            }
+            if (numbers[i] % 3 == 0) { // number[i] = 3, 6, 9
+                sb.append(right);
+                rightPosition = numbers[i];
                 continue;
             }
 
-            System.out.println(i + "번째 number : " + numbers[i]);
-            System.out.println(i + "번째 left bucket : " + (leftPosition + 1));
-            System.out.println(i + "번째 right bucket : " + (rightPosition - 1));
-            System.out.println(i + "번째 left bucket 절대값 : " + Math.abs(numbers[i] - (leftPosition + 1)));
-            System.out.println(i + "번째 right bucket 절대값 : " + Math.abs(numbers[i] - (rightPosition - 1)));
-            String result = Math.abs(numbers[i] - (leftPosition + 1)) < Math.abs(numbers[i] - (rightPosition - 1)) ? left : right;
-            System.out.println(" 결과 >>> " +result);
-            sb.append(result);
-            if (result == left) {
+            int leftDiff = Math.abs(leftPosition - numbers[i]);
+            int rightDiff = Math.abs(rightPosition - numbers[i]);
+            int leftDist = leftDiff / 3 + leftDiff % 3;
+            int rightDist = rightDiff / 3 + rightDiff % 3;
+
+            System.out.println(i + 1 + "번째 " + "number : " +numbers[i]);
+            System.out.println(i + 1 + "번째 " + "leftPosition : " +leftPosition);
+            System.out.println(i + 1 + "번째 " + "rightPosition : " +rightPosition);
+            System.out.println(i + 1 + "번째 " + "leftDiff : " +leftDiff);
+            System.out.println(i + 1 + "번째 " + "rightDiff : " +rightDiff);
+            System.out.println(i + 1 + "번째 " + "leftDist : " +leftDist);
+            System.out.println(i + 1 + "번째 " + "rightDist : " +rightDist);
+            System.out.println("---------------------------------------");
+            if (leftDist < rightDist) {
+                sb.append(left);
                 leftPosition = numbers[i];
-            } else {
+                continue;
+            }
+            if (leftDist > rightDist) {
+                sb.append(right);
                 rightPosition = numbers[i];
+                continue;
             }
 
-            System.out.println("--------------------------");
+            // 아래는 leftDist == rightDist 의 경우
+            if (hand == "left") {
+                sb.append(left);
+                leftPosition = numbers[i];
+                continue;
+            }
+            if (hand == "right") {
+                sb.append(right);
+                rightPosition = numbers[i];
+                continue;
+            }
         }
         return sb.toString();
     }
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
-        String hand = "right";
+        int[] numbers = {7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2};
+        String hand = "left";
         System.out.println(solution.solution(numbers, hand));
     }
 }
