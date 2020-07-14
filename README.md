@@ -39,6 +39,8 @@
 
 ## Programmers
 
+#### LEVEL 1
+
 1. [42576 - 완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/unfinished_player_42576/Solution.java)
@@ -268,3 +270,12 @@
 - `stage`에 도달한 `player`가 없을 경우 실패율은 0으로 처리하는 조건을 고려하지 않았었다.
 - 문제는 통과했지만 실패율을 내림차순 정렬하고 그 값의 인덱스를 찾는 과정 등 복잡도를 낮춰야 할 것 같다.
 
+-----------
+
+#### LEVEL 2
+
+41. [42587 - 프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
+
+- [Solution]
+- `Deque`를 이용하여 풀이를 워하는 문제였으나 `List`를 이용하여 풀었다.
+- `bucket size`가 1인 경우도 고려해서 작성해야 루프에 빠지지 않는다.
