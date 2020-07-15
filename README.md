@@ -279,3 +279,9 @@
 - [Solution]
 - `Deque`를 이용하여 풀이를 워하는 문제였으나 `List`를 이용하여 풀었다.
 - `bucket size`가 1인 경우도 고려해서 작성해야 루프에 빠지지 않는다.
+
+42. [42584 - 주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584)
+
+- [Solution]
+- `ArrayList`를 이용하여 해결했으나 시간복잡도로 인해 효율성 테스트에서 실패했다.
+
