@@ -276,8 +276,8 @@
 
 41. [42587 - 프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
 
-- [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/print_42587/Solution.java)
-- `Deque`를 이용하여 풀이를 원하는 문제였으나 `List`를 이용하여 풀었다.
+- [Solution]
+- `Deque`를 이용하여 풀이를 워하는 문제였으나 `List`를 이용하여 풀었다.
 - `bucket size`가 1인 경우도 고려해서 작성해야 루프에 빠지지 않는다.
 
 42. [42584 - 주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584)
@@ -286,7 +286,3 @@
 - `ArrayList`를 이용하여 해결했으나 시간복잡도로 인해 효율성 테스트에서 실패했다.
 - 주어진 데이터를 조회만 하면 되므로 배열로만 처리하여 효율성 테스트를 통과하였다.
 
-43. [42588 - 탑](https://programmers.co.kr/learn/courses/30/lessons/42588)
-
-- [Solution]
-- 굳이 `stack`으로 풀어야 하나 싶다. 연습을 위해서는 `stack`사용을 연습해야 할까?
