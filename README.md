@@ -315,4 +315,8 @@
   n = (n - 1) / 3;
   ```
 
-  
+46. [42883 - 큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883)
+
+- [Solution]
+- `num[i]`가 `num[i+k]`까지 비교하여 그중에 `num[i]`보다 큰 값이 있으면 `num[i]`는 `result String`에 추가하지 않는다.
+- 다른 사람의 풀이를 보니 스택으로 많이 구현했다. 
