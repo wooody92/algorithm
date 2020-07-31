@@ -293,7 +293,7 @@
 
 44. [42839 - 소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839)
 
-- [Solution]
+- [Solution] 재도전하기
 
 - 재귀와 순열 알고리즘 학습이 필요하다.
 
@@ -320,3 +320,12 @@
 - [Solution]
 - `num[i]`가 `num[i+k]`까지 비교하여 그중에 `num[i]`보다 큰 값이 있으면 `num[i]`는 `result String`에 추가하지 않는다.
 - 다른 사람의 풀이를 보니 스택으로 많이 구현했다. 
+
+47. [42583 - 다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583)
+
+- [Solution] 재도전하기
+
+48. [42586 - 기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
+
+- [Solution]
+- 
