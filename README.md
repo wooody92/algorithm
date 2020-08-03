@@ -321,3 +321,20 @@
    - [Solution]
    - `HashMap`을 이용한 문제였는데 배열스럽게 풀었다. 결과를 보고 `Hash`스럽게 코드를 개선하였다.
 
+10. [42577 - 전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577)
+
+    - [Solution]
+
+    - 접두어 비교시 `Array` 메서드인 `startsWith`에 대하여 알게 되었다.
+
+    - `String` 숫자를 `sorting` 하면 앞자리부터 비교하기 때문에 바로 다음 값만 비교할 수 있다.
+
+      ```java
+      // before
+      [11955, 97674223, 1195524421, 9, 333]
+      // after
+      [11955, 1195524421, 333, 9, 97674223]
+      ```
+
+      
+
