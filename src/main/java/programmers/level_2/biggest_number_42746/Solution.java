@@ -14,8 +14,6 @@ public class Solution {
         // result가 0이나 음수이면 자리바꿈을 하지 않고, 양수이면 자리바꿈을 수행한다.
         Arrays.sort(num, (o1, o2) -> (o2 + o1).compareTo(o1 + o2));
 
-        System.out.println(">>>" + "99909".compareTo("90999"));
-
         if (num[0].equals("0")) {
             return "0";
         }

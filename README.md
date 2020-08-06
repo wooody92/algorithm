@@ -355,5 +355,9 @@
       ("99" + "909").compareTo("909" + "99")
       ```
 
-    
+12. [42885 - 구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885)
+
+    - [Solution]
+    - 처음에 `ArrayList`를 이용하여 풀었으나, 효율성 테스트 중 하나를 통과하지 못했다. `Collection`을 사용해서 시간이 초과된 것으로 판단된다.
+    - 가장 큰 `index`의 사람 한 명만 타거나 가장 작은 `index`와 가장 큰 `index`의 사람이 같이 타는 경우밖에 없으므로,  `Array`의 `index`만 변경하는 방식을 사용하여 다시 풀이하였다.
 
