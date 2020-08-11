@@ -6,25 +6,46 @@
 ## Backjoon
 
 1. [13458 - 시험감독](https://www.acmicpc.net/problem/13458)
+
    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/backjoon/test_supervisor_13458/Main.java)
    - 주어지는 결과값이 int의 범위를 초과 할 수 있다.
-   - 자료형 int -> long으로 변경 후 해결
+   - 자료형 `int` -> `long`으로 변경 후 해결
+
 2. [2309 - 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
+
    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/backjoon/seven_dwarf_2309/Main.java)
    - 난쟁이 7명 키의 합이 100이하가 아니고 100이다.
+
 3. [1476 - 날짜 계산](https://www.acmicpc.net/problem/1476)
+
    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/backjoon/date_calculate_1476/Main.java)
    - 최소공배수
+
 4. [9095 - 1,2,3 더하기](https://www.acmicpc.net/problem/9095)
+
    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/backjoon/add_one_two_three_9095/Main.java)
-   - 점화식
-   - DP
-   - Bottom-up & Top-down
+   - `점화식`
+   - `DP`
+   - `Bottom-up` & `Top-down`
    - 배열 동적으로 초기화 시 런타임 에러 발생
+
 5. [14501 - 퇴사](https://www.acmicpc.net/problem/14501)
+
    - [Solution]
-   - DP
+   - `DP`
    - 왜 틀린지 모르겠음. 다음에 다시풀어보기.
+
+6. [14889 - 스타트와 링크](https://www.acmicpc.net/problem/14889)
+
+   - [Solution]
+
+   - 조합을 이용하여 푸는 문제이다. 이를 이용하려면 재귀와 백트래킹에 대해 학습해야 한다.
+
+   - 풀이 방식이 정리가 안돼서 아래 블로그를 참고하여 해결하였다.
+
+     https://bcp0109.tistory.com/30
+
+
 
 <br><br>
 
