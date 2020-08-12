@@ -44,8 +44,31 @@
    - 풀이 방식이 정리가 안돼서 아래 블로그를 참고하여 해결하였다.
 
      https://bcp0109.tistory.com/30
+   
+7. [14888 - 연산자 끼워넣기](https://www.acmicpc.net/problem/14888)
 
+   - [Solution]
 
+   - 연산자의 경우의 수를 순열(`permutation`)로 모두 구한 후 계산하여 풀이하였다. 
+
+   - 테스트에는 통과하였지만 나의 풀이 경우에는 같은 연산자가 여러번 반복되면 그만큼 중복되어 계산하여 시간복잡도가 올라간다.
+
+   - 다른 사람의 풀이를 보니 다음과 같은 방식으로 시간복잡도를 줄였다.
+
+     ```java
+     // 1. 연산자를 갯수를 int로 받아서 그대로 사용한다.
+     st = new StringTokenizer(br.readLine());
+     for (int i = 0; i < 4; i++) {
+       operator[i] = Integer.parseInt(st.nextToken());
+     }
+     
+     // 2. 순열이 아닌 DFS 백트래킹을 이용하여 해결하였다.
+     https://www.acmicpc.net/source/21639755
+     https://zoonvivor.tistory.com/98
+     https://brenden.tistory.com/18
+     ```
+
+   - 완전탐색(`DFS`, `BFS`, `Backtracking`, `permutation` 등)과 그 방법들의 관계에 대해서 명확하게 이해가 필요하다.
 
 <br><br>
 
