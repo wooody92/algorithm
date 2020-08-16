@@ -412,4 +412,9 @@
     - 우로 이동하다 좌로 이동할 수 있다. 좌로 이동하다 우로 이동할 수 있나?
     - 다음에 다시 풀어보도록 한다.
     - 풀이 참고 : https://keepgoing0328.tistory.com/71
+    
+14. [42842 - 카펫](https://programmers.co.kr/learn/courses/30/lessons/42842)
+
+    - [Solution]
+    - 
 
