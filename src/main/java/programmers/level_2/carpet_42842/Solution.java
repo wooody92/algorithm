@@ -8,7 +8,7 @@ public class Solution {
 
     public int[] solution(int brown, int yellow) {
         List<Integer> divisors = getDivisor(brown + yellow);
-        return getMinimum(brown + yellow, divisors);
+        return getMinimum(brown, yellow, divisors);
     }
 
     // 약수 리스트 구하기
@@ -23,15 +23,20 @@ public class Solution {
     }
 
     // 약수와 몫의 합이 가장 작은 경우 구하기
-    public int[] getMinimum(int number, List<Integer> divisor) {
+    public int[] getMinimum(int brown, int yellow, List<Integer> divisor) {
         int[] result = new int[2];
+        int number = brown + yellow;
         int min = number;
         for (int i = 0; i < divisor.size(); i++) {
             int sum = divisor.get(i) + (number / divisor.get(i));
+            // 테두리의 값이 갈색 타일 수와 일치하는지 여부를 판별한다.
             if (sum <= min) {
-                min = sum;
-                result[0] = divisor.get(i);
-                result[1] = number / divisor.get(i);
+                int brownCount = (divisor.get(i) * 2) + ((number / divisor.get(i)) - 2) * 2;
+                if (brownCount == brown) {
+                    min = sum;
+                    result[0] = divisor.get(i);
+                    result[1] = number / divisor.get(i);
+                }
             }
         }
         return result;
