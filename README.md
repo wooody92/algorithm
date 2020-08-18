@@ -415,7 +415,12 @@
     
 14. [42842 - 카펫](https://programmers.co.kr/learn/courses/30/lessons/42842)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/carpet_42842/Solution.java)
     - 전체 타일 갯수의 약수들의 집합을 구하고, 약수와 몫의 합이 가장 작은 경우를 판별하여 풀이하였다.
     - 결과값이 갈색 타일의 갯수와 일치하는 지 여부도 판별해야 모든 테스트 케이스를 통과할 수 있다.
+
+15. [12911 - 다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911)
+
+    - [Solution]
+    - `Integer.bitCount()` 메서드를 이용하여 주어진 수의 1의 갯수를 구할 수 있다.
 
