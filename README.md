@@ -424,3 +424,7 @@
     - [Solution]
     - `Integer.bitCount()` 메서드를 이용하여 주어진 수의 1의 갯수를 구할 수 있다.
 
+16. [12924 - 숫자의 표현](https://programmers.co.kr/learn/courses/30/lessons/12924)
+
+    - [Solution]
+
