@@ -421,10 +421,15 @@
 
 15. [12911 - 다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/next_number_12911/Solution.java)
     - `Integer.bitCount()` 메서드를 이용하여 주어진 수의 1의 갯수를 구할 수 있다.
 
 16. [12924 - 숫자의 표현](https://programmers.co.kr/learn/courses/30/lessons/12924)
 
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/serial_number_12924/Solution.java)
+
+17. [12909 - 올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909)
+
     - [Solution]
+    - `()))((()` 와 같이 갯수가 일치해도 문법적으로 맞지 않는 경우도 확인해야 한다.
 
