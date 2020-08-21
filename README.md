@@ -70,6 +70,11 @@
 
    - 완전탐색(`DFS`, `BFS`, `Backtracking`, `permutation` 등)과 그 방법들의 관계에 대해서 명확하게 이해가 필요하다.
 
+8. [14502 - 연구소](https://www.acmicpc.net/problem/14502)
+
+   - [Solution]
+   - 완전탐색 `DFS` 문제임을 파악하지 못했다.
+
 <br><br>
 
 ## Programmers
