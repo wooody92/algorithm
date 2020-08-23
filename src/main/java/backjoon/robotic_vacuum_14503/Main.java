@@ -47,6 +47,11 @@ public class Main {
         int M = map[0].length;
         map[y][x] = 2;
 
+        printMap(map);
+        System.out.println("========= " + direction + " =========");
+        System.out.println(">> x : " + x + " >> y : " +y);
+        System.out.println("=============================");
+
         for (int i = direction; i < direction + 4; i++) {
             int idx = i % 4;
 
@@ -56,18 +61,23 @@ public class Main {
             if (nx >= 0 && nx < M && ny >=0 && ny < N) {
                 if (map[ny][nx] == 0) {
                     map[ny][nx] = 2;
-                    direction = idx;
+                    direction = getLeftDirection(idx);
 
-                    printMap(map);
-                    System.out.println("========= " + direction + " =========");
-                    System.out.println(">> nx : " + nx + " >> ny : " +ny);
-                    System.out.println("=============================");
+                    // 후진 및 종료 조건이 들어가야 한다.
+                    // 완전탐색으로 푸는 문제가 맞는걸까 하는 의문이 들어온다.
 
                     cleanMap(nx, ny, direction, map);
                 }
             }
         }
         return map;
+    }
+
+    public static int getLeftDirection(int direction) {
+        if (direction == 4) {
+            return 0;
+        }
+        return direction + 1;
     }
 
     public static int countCleanArea(int[][] map) {
