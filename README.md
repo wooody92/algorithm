@@ -76,6 +76,11 @@
    - 완전탐색 `DFS` 문제임을 파악하지 못했다. 백트래킹과 좌표계 탐색을 학습하기 좋은 문제여서 학습 후 정리했다.
    - [https://wooody92.github.io/algorithm/Algorithm-backtracking/](https://wooody92.github.io/algorithm/Algorithm-backtracking/)
 
+9. [14503 - 로봇 청소기](https://www.acmicpc.net/problem/14503)
+
+   - [Solution]
+   - 
+
 <br><br>
 
 ## Programmers
