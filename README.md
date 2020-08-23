@@ -79,7 +79,9 @@
 9. [14503 - 로봇 청소기](https://www.acmicpc.net/problem/14503)
 
    - [Solution]
-   - 
+   - 방향을 바꾸면서 완전 탐색하는 방식까지 구현했는데, 후진 및 종료조건의 경우를 구현하지 못해 구글을 참고하여 풀었다.
+   - 완전탐색이 아닌 `DFS`를 학습하기 좋은 문제라고 생각하여 블로그에 고민했던 점들을 정리하였다.
+   - [https://wooody92.github.io/algorithm/Algorithm-DFS/](https://wooody92.github.io/algorithm/Algorithm-DFS/)
 
 <br><br>
 
