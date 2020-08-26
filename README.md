@@ -72,13 +72,13 @@
 
 8. [14502 - 연구소](https://www.acmicpc.net/problem/14502)
 
-   - [Solution]
+   - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/backjoon/laboratory_14502/Main.java)
    - 완전탐색 `DFS` 문제임을 파악하지 못했다. 백트래킹과 좌표계 탐색을 학습하기 좋은 문제여서 학습 후 정리했다.
    - [https://wooody92.github.io/algorithm/Algorithm-backtracking/](https://wooody92.github.io/algorithm/Algorithm-backtracking/)
 
 9. [14503 - 로봇 청소기](https://www.acmicpc.net/problem/14503)
 
-   - [Solution]
+   - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/backjoon/robotic_vacuum_14503/Main.java)
    - 방향을 바꾸면서 완전 탐색하는 방식까지 구현했는데, 후진 및 종료조건의 경우를 구현하지 못해 구글을 참고하여 풀었다.
    - 완전탐색이 아닌 `DFS`를 학습하기 좋은 문제라고 생각하여 블로그에 고민했던 점들을 정리하였다.
    - [https://wooody92.github.io/algorithm/Algorithm-DFS/](https://wooody92.github.io/algorithm/Algorithm-DFS/)
@@ -443,6 +443,6 @@
 
 17. [12909 - 올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/braket_12909/Solution.java)
     - `()))((()` 와 같이 갯수가 일치해도 문법적으로 맞지 않는 경우도 확인해야 한다.
 
