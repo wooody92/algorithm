@@ -446,3 +446,8 @@
     - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/braket_12909/Solution.java)
     - `()))((()` 와 같이 갯수가 일치해도 문법적으로 맞지 않는 경우도 확인해야 한다.
 
+18. [42888 - 오픈채팅방 : kakao 2019](https://programmers.co.kr/learn/courses/30/lessons/42888?language=java)
+
+    - [Solution]
+    - `HashMap`과 `List`를 이용하여 어렵지않게 풀었다.
+
