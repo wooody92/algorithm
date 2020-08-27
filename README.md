@@ -451,3 +451,13 @@
     - [Solution]
     - `HashMap`과 `List`를 이용하여 어렵지않게 풀었다.
 
+19. [42890 - 후보키 : kakao 2019](https://programmers.co.kr/learn/courses/30/lessons/42890)
+
+    - [Solution] 재도전하기
+    - 비트마스크에 대해 학습
+
+20. [17683 -방금그곡 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17683)
+
+    - [Solution] 재도전하기
+    - 몇가지 테스트케이스에 통과하지 못했다. 다른 사람의 풀이를 보니 `C#`의 경우 `c`로 치환하여 풀이하였다.
+
