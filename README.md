@@ -461,4 +461,20 @@
     - [Solution]
     - 처음 풀이에서 몇가지 테스트케이스에 통과하지 못했다. 다른 사람의 풀이를 보니 `C#`의 경우 `c`로 치환하여 풀이하였다.
     - 데이터를 저장하는 `Music` 클래스와 `C# -> c` 치환을 이용하여 다시 풀었다.
+    
+21. [17680 - 캐시 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17680)
+
+    - [Solution]
+
+    - `Queue`로 풀이하였으나 몇가지 테스트에 통과하지 못해서 `List`로 풀이하였다.
+
+    - 두 가지의 실수 포인트가 있었다.
+
+      ```java
+      1. cache에 city값이 있는경우 LRU(Least Recently Used)이므로 현재 위치의 데이터를 지우고, List의 가장 뒤(tail)로 변경한다. Queue의 경우는 Last로 변경한다.
+        
+      2. 처음 cache를 주어진 cacheSize만큼 추가할 때 cache가 cacheSize만큼 채워지지 않고 cache hit하는 경우가 생길 수 있음을 고려해야한다.
+      ```
+
+      
 
