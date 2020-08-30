@@ -476,5 +476,8 @@
       2. 처음 cache를 주어진 cacheSize만큼 추가할 때 cache가 cacheSize만큼 채워지지 않고 cache hit하는 경우가 생길 수 있음을 고려해야한다.
       ```
 
-      
+22. [60057 - 문자열 압축 : kakao 2020](https://programmers.co.kr/learn/courses/30/lessons/60057)
+
+    - [Solution] 재도전하기
+    - 
 
