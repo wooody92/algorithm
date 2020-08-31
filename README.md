@@ -448,7 +448,7 @@
 
 18. [42888 - 오픈채팅방 : kakao 2019](https://programmers.co.kr/learn/courses/30/lessons/42888?language=java)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/open_chat_42888/Solution.java)
     - `HashMap`과 `List`를 이용하여 어렵지않게 풀었다.
 
 19. [42890 - 후보키 : kakao 2019](https://programmers.co.kr/learn/courses/30/lessons/42890)
@@ -458,13 +458,13 @@
 
 20. [17683 -방금그곡 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17683)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/shazam_17683/Solution.java)
     - 처음 풀이에서 몇가지 테스트케이스에 통과하지 못했다. 다른 사람의 풀이를 보니 `C#`의 경우 `c`로 치환하여 풀이하였다.
     - 데이터를 저장하는 `Music` 클래스와 `C# -> c` 치환을 이용하여 다시 풀었다.
     
 21. [17680 - 캐시 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17680)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/cache_17680/Solution.java)
 
     - `Queue`로 풀이하였으나 몇가지 테스트에 통과하지 못해서 `List`로 풀이하였다.
 
@@ -479,5 +479,5 @@
 22. [60057 - 문자열 압축 : kakao 2020](https://programmers.co.kr/learn/courses/30/lessons/60057)
 
     - [Solution] 재도전하기
-    - 
+    - 이상하게 안풀린다. 다음에 풀기로 결심했다.
 

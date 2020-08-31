@@ -4,23 +4,53 @@ public class Solution {
 
     public int solution(String s) {
         int min = s.length();
-        StringBuilder sb = new StringBuilder();
 
         for (int range = 1; range <= s.length() / 2; range++) {
+            StringBuilder sb = new StringBuilder();
+            String base = s.substring(0, range);
+            String next = "";
+            int count = 1;
+            for (int i = 1; i < s.length() / range; i++) {
+                next = s.substring(i * range, (i * range) + range);
+                if (base.equals(next)) {
+                    count++;
+                    continue;
+                }
+                sb.append(count);
+                sb.append(base);
+                base = next;
+                count = 1;
+            }
+            // last
+            sb.append(count);
+            sb.append(base);
+            System.out.println(">>> " + sb.toString().replaceAll("1", ""));
+            min = Math.min(min, sb.toString().replaceAll("1", "").length());
+        }
+        return min;
+    }
+
+    public int solution4(String s) {
+        int min = s.length();
+
+        for (int range = 1; range <= s.length() / 2; range++) {
+            StringBuilder sb = new StringBuilder();
             String base = s.substring(0, range);
             String next = "";
 
-            // range 범위에서 문자열을 한바퀴 순회해야 한다. 어떻게?
-            int count = 1;
-            for (int j = range; j < s.length(); j += range) {
-                next = s.substring(j, j + range);
-                if (!base.equals(next)) {
-                    break;
+            for (int i = 0; i <= s.length() - range; i++) {
+                int count = 1;
+                for (int j = i + range; j < s.length() - range; j += range) {
+                    next = s.substring(j, j + range);
+                    if (!base.equals(next)) {
+                        break;
+                    }
+                    count++;
                 }
-                count++;
+                sb.append(count);
+                sb.append(base);
+                base = next;
             }
-            sb.append(count);
-            sb.append(base);
             System.out.println(">>> " + sb.toString().replaceAll("1", ""));
             Math.min(min, sb.toString().replaceAll("1", "").length());
         }
