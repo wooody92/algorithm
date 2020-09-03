@@ -484,8 +484,7 @@
 23. [17687 - n진수 게임 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17687)
 
     - [Solution]
-    - 이전에 3진수를 구하는 코드를 작성했을 때 단순히 나누고 나머지를 이용하는 것이 아니고, `n = (n - 1) / 3;`과 같이 몫에 특정 연산을 해줬었다.
-    - 이번 경우에는 특정한 수 `number`를 `n`진수로 변환하는 메서드 코드를 작성해야 했는데, 우려하던 것과 다르게 단순히 2진수 구하는 방식으로 구현하니 풀렸다. 이전에 풀었던 3진수 문제와 비교해봐야겠다.
-    - `StringBuilder`를 이용하여 `append` 시 앞자리가 `String` 타입의 `0`이면 `int`형처럼 자동으로 생략되는 문제가 있어 `String`으로 연산했다.
-    - 전반적으로 집중이 잘 안되어 풀긴했지만 내일 다시 확인해봐야겠다.
+    - 특정한 수 `number`를 `n`진수로 변환하는 메서드 코드를 작성해야 했는데, 이전에 [124 나라의 숫자](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/country_of_124_12899/Solution.java) 에서 3진수 구하는 문제를 풀었던 기억이 났다.
+    - 진수변환하는 `nConvert`메서드에서 `StringBuilder`를 사용하면 `0.1ms`가 걸렸고, `String`을 사용하면 `15ms` 가까이 걸렸다.
+    - 이를 보고 `String`을 사용해서 객체를 계속 추가하면 단순히 메모리 공간을 더 차지하는 수준이(`mutable`과 `immutable` 관점에서) 하니고 속도에도 영향을 준다는 것을 알게 되었다.
 

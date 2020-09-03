@@ -20,7 +20,7 @@ public class Solution {
     }
 
     public String nConvert(int n, int number) {
-        String result = "";
+        StringBuilder sb = new StringBuilder();
         char[] c = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
         int rest;
         if (number == 0) {
@@ -29,9 +29,9 @@ public class Solution {
         while (number > 0) {
             rest = number % n;
             number /= n;
-            result = c[rest] + result;
+            sb.append(c[rest]);
         }
-        return result;
+        return sb.reverse().toString();
     }
 
     public static void main(String[] args) {
