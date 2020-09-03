@@ -488,3 +488,21 @@
     - 진수변환하는 `nConvert`메서드에서 `StringBuilder`를 사용하면 `0.1ms`가 걸렸고, `String`을 사용하면 `15ms` 가까이 걸렸다.
     - 이를 보고 `String`을 사용해서 객체를 계속 추가하면 단순히 메모리 공간을 더 차지하는 수준이(`mutable`과 `immutable` 관점에서) 하니고 속도에도 영향을 준다는 것을 알게 되었다.
 
+24. [17677 - 뉴스 클러스터링 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17677)
+
+    - [Solution]
+
+    - `ArrayList`도 `Array`와 같이 단순히 `list1 = list2`로 복사하면 `call by reference` 주소값으로 복사가 된다. `list1.addAll(list2)`로 `value` 값을 복사해서 사용했다.
+
+    - 영문자 이외의 모든 문자를 허용하지 않을 때(숫자, 공백, 특수문자 제거) 정규식과 `match` 메서드를 이용해보았다.
+
+      ```java
+      String regex = "^[a-zA-Z]*$";
+      if (str.matches(regex)) {
+        // str이 숫자, 공백, 특수문자 등 영문자 이외의 값을 갖고 있다면 false
+        // str이 오직 영문자만 갖고있다면 true
+      }
+      ```
+
+      
+
