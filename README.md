@@ -504,5 +504,10 @@
       }
       ```
 
-      
+25. [17686 - 파일명 정렬 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17686)
+
+    - [Solution]
+    - 정규식을 이용하였고, 클래스를 생성하여 객체지향적으로 풀었다.
+    - 문자열을 파싱하고 조건에 맞도록 `Comparator`와 `compareTo`를 사용하여 정렬하는 문제였다. `Comparator` 사용법을 이해하여 블로그에 정리하였다.
+    - [https://wooody92.github.io/algorithm/Algorithm-Comparator/](https://wooody92.github.io/algorithm/Algorithm-Comparator/)
 
