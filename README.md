@@ -483,14 +483,14 @@
 
 23. [17687 - n진수 게임 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17687)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/n_game_17687/Solution.java)
     - 특정한 수 `number`를 `n`진수로 변환하는 메서드 코드를 작성해야 했는데, 이전에 [124 나라의 숫자](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/country_of_124_12899/Solution.java) 에서 3진수 구하는 문제를 풀었던 기억이 났다.
     - 진수변환하는 `nConvert`메서드에서 `StringBuilder`를 사용하면 `0.1ms`가 걸렸고, `String`을 사용하면 `15ms` 가까이 걸렸다.
     - 이를 보고 `String`을 사용해서 객체를 계속 추가하면 단순히 메모리 공간을 더 차지하는 수준이(`mutable`과 `immutable` 관점에서) 하니고 속도에도 영향을 준다는 것을 알게 되었다.
 
 24. [17677 - 뉴스 클러스터링 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17677)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/news_clustering_17677/Solution.java)
 
     - `ArrayList`도 `Array`와 같이 단순히 `list1 = list2`로 복사하면 `call by reference` 주소값으로 복사가 된다. `list1.addAll(list2)`로 `value` 값을 복사해서 사용했다.
 
@@ -506,8 +506,14 @@
 
 25. [17686 - 파일명 정렬 : kakao 2018](https://programmers.co.kr/learn/courses/30/lessons/17686)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/sorting_files_17686/Solution.java)
     - 정규식을 이용하였고, 클래스를 생성하여 객체지향적으로 풀었다.
     - 문자열을 파싱하고 조건에 맞도록 `Comparator`와 `compareTo`를 사용하여 정렬하는 문제였다. `Comparator` 사용법을 이해하여 블로그에 정리하였다.
     - [https://wooody92.github.io/algorithm/Algorithm-Comparator/](https://wooody92.github.io/algorithm/Algorithm-Comparator/)
+
+26. [60058 - 괄호 변환 : kakao 2020](https://programmers.co.kr/learn/courses/30/lessons/60058)
+
+    - [Solution]
+    - 재귀를 이용한 문자열 처리 문제였고, 재귀 로직을 문제에서 지문 형식으로 알려주었다.
+    - 지문을 보고 어떤 구조인지 이해가 안가서 구글링으로 지문을 이해했다.
 
