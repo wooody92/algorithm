@@ -11,7 +11,7 @@ public class Solution {
 
     public long solution(String expression) {
         // parsing
-        List<Integer> numbers = new ArrayList<>();
+        List<Long> numbers = new ArrayList<>();
         List<String> operators = new ArrayList<>();
         String[] number = expression.replaceAll("\\+", ",")
             .replaceAll("-", ",")
@@ -19,7 +19,7 @@ public class Solution {
             .split(",");
 
         for (int i = 0; i < number.length; i++) {
-            numbers.add(Integer.parseInt(number[i]));
+            numbers.add(Long.parseLong(number[i]));
         }
         for (int i = 0; i < expression.length(); i++) {
             if (expression.charAt(i) >= '0' && expression.charAt(i) < '9') {
@@ -33,7 +33,7 @@ public class Solution {
         String[][] orders = {{"-", "*", "+"}, {"*", "-", "+"}, {"*", "+", "-"}, {"+", "*", "-"}, {"+", "-", "*"}, {"-", "+", "*"}};
 
         for (int k = 0; k < orders.length; k++) {
-            List<Integer> tempNumbers = new ArrayList<>();
+            List<Long> tempNumbers = new ArrayList<>();
             List<String> tempOperators = new ArrayList<>();
             tempNumbers.addAll(numbers);
             tempOperators.addAll(operators);
@@ -43,8 +43,8 @@ public class Solution {
 
                 for (int j = 0; j < tempOperators.size(); j++) {
                     if (cur.equals(tempOperators.get(j))) {
-                        int num1 = tempNumbers.get(j);
-                        int num2 = tempNumbers.get(j + 1);
+                        long num1 = tempNumbers.get(j);
+                        long num2 = tempNumbers.get(j + 1);
                         tempNumbers.set(j, calculate(num1, num2, cur));
                         tempOperators.remove(j);
                         tempNumbers.remove(j + 1);
@@ -52,22 +52,18 @@ public class Solution {
                 }
             }
             if (tempNumbers.size() > 1) {
-                int temp = Math
+                long temp = Math
                     .abs(calculate(tempNumbers.get(0), tempNumbers.get(1), tempOperators.get(0)));
                 result = Math.max(result, temp);
-                System.out.println(">>> temp : " + temp + " result : " + result);
-                System.out.println("================================");
             } else {
-                int temp = tempNumbers.get(0);
+                long temp = tempNumbers.get(0);
                 result = Math.max(result, temp);
-                System.out.println(">>> temp : " + temp + " result : " + result);
-                System.out.println("================================");
             }
         }
         return result;
     }
 
-    public Integer calculate(int num1, int num2, String operator) {
+    public Long calculate(long num1, long num2, String operator) {
         switch (operator) {
             case "+":
                 return num1 + num2;
