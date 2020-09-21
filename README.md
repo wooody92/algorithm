@@ -74,7 +74,7 @@
 
    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/backjoon/laboratory_14502/Main.java)
    - 완전탐색 `DFS` 문제임을 파악하지 못했다. 백트래킹과 좌표계 탐색을 학습하기 좋은 문제여서 학습 후 정리했다.
-   - [https://wooody92.github.io/algorithm/Algorithm-backtracking/](https://wooody92.github.io/algorithm/Algorithm-backtracking/)
+   - [https://wooody92.github.io/algorithm/Algorithm-backtracking/](https://wooody92.github.io/algorithm/Algorithm-%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/)
 
 9. [14503 - 로봇 청소기](https://www.acmicpc.net/problem/14503)
 
@@ -530,5 +530,8 @@
       https://msmk530.tistory.com/147
       ```
 
-    
+28. [12981 - 영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981)
+
+    - [Solution]
+    - 중복 체크시 자료구조로 `Set`을 사용할 수 있었지만, 주어진 `words` 최대 길이가 100으로 매우 짧아 for 문으로 처리하였다.
 
