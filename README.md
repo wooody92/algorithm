@@ -535,3 +535,90 @@
     - [Solution]
     - 중복 체크시 자료구조로 `Set`을 사용할 수 있었지만, 주어진 `words` 최대 길이가 100으로 매우 짧아 for 문으로 처리하였다.
 
+29. [SQL - LEVEL 1](https://programmers.co.kr/learn/challenges)
+
+    - 특정 조건 제외해서 검색한다.(`NOT * IN ('')`)
+
+      ```sql
+      SELECT animal_id, name FROM animal_ins WHERE NOT intake_condition IN ('Aged');
+      ```
+
+    - 여러 조건에서의 정렬 - 이름으로 우선 정렬하고 중복되면 날짜 역순으로 정렬한다.
+
+      ```sql
+      SELECT animal_id, name, datetime FROM animal_ins ORDER BY name, datetime DESC;
+      ```
+
+    - NULL 검색하기 (`WHERE * IS NULL`)
+
+      ```sql
+      SELECT animal_id FROM animal_ins WHERE name IS NULL;
+      ```
+
+    - NULL이 아닌 컬럼 검색하기
+
+      ```sql
+      SELECT animal_id FROM animal_ins WHERE name IS NOT NULL;
+      ```
+
+30. [SQL - LEVEL 2]()
+
+    - 특정 컬럼 NULL 체크 후 데이터 변경하여 조회하기(`NVL`, `IFNULL`)
+
+      ```sql
+      SELECT animal_type, IFNULL(name, 'No name'), sex_upon_intake FROM animal_ins ORDER BY animal_id;
+      ```
+
+    - 컬럼 갯수 세기 (`COUNT`)
+
+      ```sql
+      SELECT count(animal_id) FROM animal_ins;
+      ```
+
+    - 그룹화 하여 조회 (`GROUP BY`)
+
+      ```sql
+      SELECT animal_type, COUNT(animal_id) FROM animal_ins GROUP BY animal_type ORDER BY animal_type;
+      ```
+
+    - 그룹에서의 조건 조회 (`HAVING`)
+
+      ```sql
+      SELECT name, COUNT(animal_id) FROM animal_ins GROUP BY name HAVING count(name) > 1 ORDER BY name;
+      ```
+
+    - Datetime에서 시간만 뽑기 (`HOUR`)
+
+      ```sql
+      SELECT HOUR(datetime) AS hour, COUNT(animal_id) FROM animal_outs GROUP BY HOUR(datetime) HAVING hour >= 9 AND hour <= 19 ORDER BY hour;
+      ```
+
+    - 다중 조건 검색 (`WHERE * IN ('')`)
+
+      ```sql
+      SELECT animal_id, name, sex_upon_intake FROM animal_ins WHERE name IN ('Lucy', 'Ella', 'Pickle', 'Rogan', 'Sabrina', 'Mitty') ORDER BY animal_id;
+      ```
+
+    - 부분적으로 일치하는 컬럼 조회 (`LIKE = ''`)
+
+      [https://coding-factory.tistory.com/114](https://coding-factory.tistory.com/114)
+
+      ```sql
+      SELECT animal_id, name FROM animal_ins WHERE animal_type = 'Dog' AND name LIKE '%EL%' ORDER BY name;
+      ```
+
+    - IF 조건절 사용하기
+
+      ```sql
+      SELECT animal_id, name, IF(sex_upon_intake LIKE '%Neutered%' OR sex_upon_intake LIKE '%Spayed%', 'O', 'X') FROM animal_ins ORDER BY animal_id;
+      ```
+
+    - Date_Format 변경하기(`DATE_FORMAT(datetime, '')`)
+
+      ```sql
+      SELECT animal_id, name, DATE_FORMAT(datetime, '%Y-%m-%d') FROM animal_ins ORDER BY animal_id;
+      ```
+
+      
+
+    
