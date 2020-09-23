@@ -561,7 +561,7 @@
       SELECT animal_id FROM animal_ins WHERE name IS NOT NULL;
       ```
 
-30. [SQL - LEVEL 2]()
+30. [SQL - LEVEL 2](https://programmers.co.kr/learn/challenges)
 
     - 특정 컬럼 NULL 체크 후 데이터 변경하여 조회하기(`NVL`, `IFNULL`)
 
@@ -619,6 +619,9 @@
       SELECT animal_id, name, DATE_FORMAT(datetime, '%Y-%m-%d') FROM animal_ins ORDER BY animal_id;
       ```
 
-      
+31. [64065 - 튜플 : kakao 2029](https://programmers.co.kr/learn/courses/30/lessons/64065)
+
+    - [Solution]
+    - 문자열 파싱 문제였다. `!ArrayList.contains(str)`로 특정 문자열의 List 포함 여부를 확인할 수 있다.
 
     
