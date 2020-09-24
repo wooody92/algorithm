@@ -1,4 +1,4 @@
-package programmers.level_2.teaget_number_43165;
+package programmers.level_2.target_number_43165;
 
 public class Solution {
 
