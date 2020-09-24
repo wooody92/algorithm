@@ -82,6 +82,30 @@
    - 방향을 바꾸면서 완전 탐색하는 방식까지 구현했는데, 후진 및 종료조건의 경우를 구현하지 못해 구글을 참고하여 풀었다.
    - 완전탐색이 아닌 `DFS`를 학습하기 좋은 문제라고 생각하여 블로그에 고민했던 점들을 정리하였다.
    - [https://wooody92.github.io/algorithm/Algorithm-DFS/](https://wooody92.github.io/algorithm/Algorithm-DFS/)
+   
+10. [14719 - 빗물](https://www.acmicpc.net/status?user_id=skyskysky0&problem_id=14719&from_mine=1)
+
+    - [Solution] 재도전 하기
+
+    - 예외 케이스를 통과하지 못해 코드를 수정하다보니 꼬였다.
+
+    - 예외 테스트 케이스
+
+      ```java
+      // #1
+      9 5
+      9 8 7 6 5
+      
+      // #2
+      5 5
+      5 5 4 5 5
+        
+      // #3
+      5 5
+      3 5 3 4 3
+      ```
+
+      
 
 <br><br>
 
@@ -665,4 +689,4 @@
       }
       ```
 
-      
+    
