@@ -624,4 +624,22 @@
     - [Solution]
     - 문자열 파싱 문제였다. `!ArrayList.contains(str)`로 특정 문자열의 List 포함 여부를 확인할 수 있다.
 
-    
+32. [SQL - LEVEL 3](https://programmers.co.kr/learn/challenges)
+
+    - 한 쪽에 포함되지 않은 데이터만 가져오기(`LEFT OUTER JOIN`, `WHERE i.animal_id IS NULL`)
+
+      https://m.blog.naver.com/PostView.nhn?blogId=wideeyed&logNo=221435077767&proxyReferer=https:%2F%2Fwww.google.com%2F
+
+    - `INNER JOIN == JOIN`, `LEFT OUTER JOIN == LEFT JOIN`
+
+      ```sql
+      SELECT o.animal_id, o.name FROM animal_outs AS o LEFT OUTER JOIN animal_ins AS i ON o.animal_id = i.animal_id WHERE i.animal_id IS NULL ORDER BY o.animal_id;
+      ```
+
+    - `INNER JOIN` 테이블에서의 날짜 차이(`DATEDIFF(i.datetime, o.datetime)`)
+
+      ```sql
+      SELECT i.animal_id, i.name FROM animal_ins AS i INNER JOIN animal_outs AS o ON i.animal_id = o.animal_id ORDER BY DATEDIFF(i.datetime, o.datetime) LIMIT 2;
+      ```
+
+      
