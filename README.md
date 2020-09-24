@@ -642,4 +642,27 @@
       SELECT i.animal_id, i.name FROM animal_ins AS i INNER JOIN animal_outs AS o ON i.animal_id = o.animal_id ORDER BY DATEDIFF(i.datetime, o.datetime) LIMIT 2;
       ```
 
+33. [43165 - 타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)
+
+    - [Solution]
+
+    - 유형이 정해져있는 기본적인 dfs 재귀 문제이다. 트리 구조로 분기되는 방식을 이해하자.
+
+    - 주어진 `numbers` 배열의 모든 값들을 탐색해야 하므로 `base case`는 `depth == numbers.length`이다.
+
+    - 가장 아래 `depth`까지 왔을 때 `sum == target` 인지 확인한다.
+
+      ```java
+      public void dfs(int[] numbers, int depth, int sum, int target) {
+        if (depth == numbers.length) {
+          if (sum == target) {
+            result++;
+          }
+          return;
+        }
+        dfs(numbers, depth + 1, sum + numbers[depth], target);
+        dfs(numbers, depth + 1, sum - numbers[depth], target);
+      }
+      ```
+
       
