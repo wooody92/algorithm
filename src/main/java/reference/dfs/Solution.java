@@ -1,4 +1,4 @@
-package principle.dfs;
+package reference.dfs;
 
 public class Solution {
 

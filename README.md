@@ -596,7 +596,7 @@
     - 컬럼 갯수 세기 (`COUNT`)
 
       ```sql
-      SELECT count(animal_id) FROM animal_ins;
+      SELECT COUNT(animal_id) FROM animal_ins;
       ```
 
     - 그룹화 하여 조회 (`GROUP BY`)
@@ -608,7 +608,7 @@
     - 그룹에서의 조건 조회 (`HAVING`)
 
       ```sql
-      SELECT name, COUNT(animal_id) FROM animal_ins GROUP BY name HAVING count(name) > 1 ORDER BY name;
+      SELECT name, COUNT(animal_id) FROM animal_ins GROUP BY name HAVING COUNT(name) > 1 ORDER BY name;
       ```
 
     - Datetime에서 시간만 뽑기 (`HOUR`)

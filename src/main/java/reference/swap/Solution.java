@@ -1,4 +1,4 @@
-package principle.swap;
+package reference.swap;
 
 public class Solution {
 

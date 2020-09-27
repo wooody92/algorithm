@@ -1,4 +1,4 @@
-package principle.combination;
+package reference.combination;
 
 public class Combination {
 

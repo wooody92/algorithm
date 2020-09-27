@@ -1,4 +1,4 @@
-package principle.permutation;
+package reference.permutation;
 
 public class Permutation {
 

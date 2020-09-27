@@ -1,4 +1,4 @@
-package principle.merge_sort;
+package reference.merge_sort;
 
 /* Java program for Merge Sort */
 class MergeSort {
