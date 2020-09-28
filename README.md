@@ -105,7 +105,9 @@
       3 5 3 4 3
       ```
 
-      
+11. [2504 - 괄호의 값](https://www.acmicpc.net/problem/2504)
+
+    - [Solution]
 
 <br><br>
 
@@ -608,7 +610,7 @@
     - 그룹에서의 조건 조회 (`HAVING`)
 
       ```sql
-      SELECT name, COUNT(animal_id) FROM animal_ins GROUP BY name HAVING COUNT(name) > 1 ORDER BY name;
+      SELECT name, COUNT(animal_id) FROM animal_ins GROUP BY name HAVING count(name) > 1 ORDER BY name;
       ```
 
     - Datetime에서 시간만 뽑기 (`HOUR`)
