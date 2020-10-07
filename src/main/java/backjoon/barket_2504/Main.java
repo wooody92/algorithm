@@ -44,6 +44,11 @@ public class Main {
         }
     }
 
+    public static int loop() {
+
+        return 0;
+    }
+
     static boolean isValidString(String s) {
         int round = 0;
         int rectangle = 0;
