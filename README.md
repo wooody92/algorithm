@@ -691,4 +691,27 @@
       }
       ```
 
-    
+34. [12945 - 피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
+
+    - [Solution]
+    - 일반적인 재귀에서 동일한 계산의 반복수행을 memoization(메모이제이션)으로 제거하여 실행 속도를 증가시킬 수 있다.
+    - 이 문제에서는 피사노 주기를 이용한 문제이다.
+    - 피사노 주기란 피보나치 수를 k로 나누었을 때, 그 나머지는 항상 주기를 갖는 성질이다. 
+
+35. [49993 - 스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993)
+
+    - [Solution]
+
+    - 매개 변수로 비교값을 받아 정규식을 이용하여 풀었다.
+
+      ```java
+      String regex = String.format("[%s]*$", base);
+      ```
+
+    - 스킬트리에 스킬이 하나도 포함되어있지 않다면 연계 스킬과 연관이 없으므로 result++을 해줘야 한다.
+
+36. [12980 - 점프와 순간이동](https://programmers.co.kr/learn/courses/30/lessons/12980)
+
+    - [Solution]
+    - 어렵게 생각하지 않고 수학적으로 풀었다. 탐색의 함정에 빠질 수도 있는 문제같다.
+
