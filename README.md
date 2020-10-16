@@ -734,5 +734,15 @@
       w + h - gcd;
       ```
 
-      
+39. [42626 - 더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626)
+
+    - [Solution]
+    - 처음에 ArrayList를 사용해서 풀었을 때는 효율성에 통과하지 못했다.
+    - PriorityQueue 자료구조를 이용하여 동일한 로직의 코드를 작성하니 통과했다.
+    - ArrayList 방식의 경우 `Collection.sort`로 정렬해주는 과정이 추가되기 때문에 시간 복잡도가 올라간 것으로 보인다.
+    - Java의 PrimaryQueue의 경우 Heap으로 구현되어 있다.
+    - 힙(Heap)은 최댓값 및 최솟값을 찾아내는 연산을 빠르게 하기 위해 고안된 완전 이진 트리의 특징을 갖는 자료구조이다.
+    - 참고 링크
+      - https://coding-factory.tistory.com/603
+      - https://hannom.tistory.com/36
 
