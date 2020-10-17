@@ -1,4 +1,4 @@
-package programmers.level_2.fibonacci;
+package programmers.level_2.fibonacci_12945;
 
 public class Solution {
 

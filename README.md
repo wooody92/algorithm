@@ -539,13 +539,13 @@
 
 26. [60058 - 괄호 변환 : kakao 2020](https://programmers.co.kr/learn/courses/30/lessons/60058)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/bracket_transform_60058/Solution.java)
     - 재귀를 이용한 문자열 처리 문제였고, 재귀 로직을 문제에서 지문 형식으로 알려주었다.
     - 지문을 보고 어떤 구조인지 이해가 안가서 구글링으로 지문을 이해했다.
 
 27. [67257 - 수식 최대화 : kakao 2020](https://programmers.co.kr/learn/courses/30/lessons/67257)
 
-    - [Solution] 재도전하기
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/math_expression_67257/Solution.java) 재도전하기
 
     - 빠르게 풀어보려고 하드코딩으로 정리 없이 풀었는데, 테스트케이스에서 실패했다. 다시 천천히 풀어봐야겠다.
 
@@ -558,7 +558,7 @@
 
 28. [12981 - 영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/word_chain_12981/Solution.java)
     - 중복 체크시 자료구조로 `Set`을 사용할 수 있었지만, 주어진 `words` 최대 길이가 100으로 매우 짧아 for 문으로 처리하였다.
 
 29. [SQL - LEVEL 1](https://programmers.co.kr/learn/challenges)
@@ -647,7 +647,7 @@
 
 31. [64065 - 튜플 : kakao 2029](https://programmers.co.kr/learn/courses/30/lessons/64065)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/tuple_64065/Solution.java)
     - 문자열 파싱 문제였다. `!ArrayList.contains(str)`로 특정 문자열의 List 포함 여부를 확인할 수 있다.
 
 32. [SQL - LEVEL 3](https://programmers.co.kr/learn/challenges)
@@ -670,7 +670,7 @@
 
 33. [43165 - 타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/target_number_43165/Solution.java)
 
     - 유형이 정해져있는 기본적인 dfs 재귀 문제이다. 트리 구조로 분기되는 방식을 이해하자.
 
@@ -693,14 +693,14 @@
 
 34. [12945 - 피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/fibonacci_12945/Solution.java)
     - 일반적인 재귀에서 동일한 계산의 반복수행을 memoization(메모이제이션)으로 제거하여 실행 속도를 증가시킬 수 있다.
     - 이 문제에서는 피사노 주기를 이용한 문제이다.
     - 피사노 주기란 피보나치 수를 k로 나누었을 때, 그 나머지는 항상 주기를 갖는 성질이다. 
 
 35. [49993 - 스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/skill_tree_49993/Solution.java)
 
     - 매개 변수로 비교값을 받아 정규식을 이용하여 풀었다.
 
@@ -712,19 +712,19 @@
 
 36. [12980 - 점프와 순간이동](https://programmers.co.kr/learn/courses/30/lessons/12980)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/jump_teleport_12980/Solution.java)
     - 어렵게 생각하지 않고 수학적으로 풀었다. 탐색의 함정에 빠질 수도 있는 문제같다.
 
 37. [12977 - 소수 만들기](https://programmers.co.kr/learn/courses/30/lessons/12977)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/making_prime_number_12977/Solution.java)
     - 처음 풀이에서 세 수의 합을 HashMap에 넣고 중복 된 소수 판별을 줄였다.
     - 두번째 방식에서는 모든 합에 대해 소수 판별을 진행하지만 코드가 훨씬 간결하다.
     - 주어진 테스트 케이스로는 두 방식 모두 소요시간이 비슷했다.
 
 38. [62048 - 멀쩡한 사각형](https://programmers.co.kr/learn/courses/30/lessons/62048)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/square_62048/Solution.java)
 
     - 알고리즘보다는 규칙을 찾기 위한 수학 문제에 가까운 것 같다.
 
@@ -736,7 +736,7 @@
 
 39. [42626 - 더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626)
 
-    - [Solution]
+    - [Solution](https://github.com/wooody92/algorithm/blob/master/src/main/java/programmers/level_2/scoville_42626/Solution.java)
     - 처음에 ArrayList를 사용해서 풀었을 때는 효율성에 통과하지 못했다.
     - PriorityQueue 자료구조를 이용하여 동일한 로직의 코드를 작성하니 통과했다.
     - ArrayList 방식의 경우 `Collection.sort`로 정렬해주는 과정이 추가되기 때문에 시간 복잡도가 올라간 것으로 보인다.
