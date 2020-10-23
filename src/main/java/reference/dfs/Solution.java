@@ -1,29 +1,80 @@
 package reference.dfs;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Stack;
+import java.util.StringTokenizer;
+
 public class Solution {
 
-    int result = 0;
+    static int[][] map; // 0으로 초기화
+    static boolean[] visited;
+    static int N; // 정점 갯수
+    static int M; // 간선 갯수
 
-    public int solution(int[] numbers, int target) {
-        dfs(numbers, 0, 0, target);
-        return result;
-    }
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+        int startingPoint = Integer.parseInt(st.nextToken()); // 시작 정점
 
-    public void dfs(int[] numbers, int depth, int sum, int target) {
-        if (depth == numbers.length) {
-            if (sum == target) {
-                result++;
-            }
-            return;
+        // 의미상 편리성을 위해 0번은 사용하지 않는다.
+        map = new int[N + 1][N + 1];
+        visited = new boolean[N + 1];
+
+        // map에 간선으로 연결되어 있는 정점 관계를 1로 마킹
+        for (int i = 0; i < M; i++) {
+            st = new StringTokenizer(br.readLine());
+            int start = Integer.parseInt(st.nextToken());
+            int end = Integer.parseInt(st.nextToken());
+            map[start][end] = 1;
+            map[end][start] = 1;
         }
-        dfs(numbers, depth + 1, sum + numbers[depth], target);
-        dfs(numbers, depth + 1, sum - numbers[depth], target);
+        dfs2(startingPoint);
     }
 
-    public static void main(String[] args) {
-        programmers.level_2.target_number_43165.Solution solution = new programmers.level_2.target_number_43165.Solution();
-        int[] numbers = {1, 1, 1, 1, 1};
-        int target = 3;
-        System.out.println(solution.solution(numbers, target));
+    /**
+     * stack
+     */
+    static void dfs(int point) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(point);
+        visited[point] = true;
+        System.out.print(point + " ");
+
+        while (!stack.isEmpty()) {
+            int x = stack.peek();
+            boolean flag = false;
+
+            for (int i = 1; i <= N; i++) {
+                if (map[x][i] == 1 && visited[i] == false) {
+                    stack.push(i);
+                    visited[i] = true;
+                    System.out.print(i + " ");
+                    flag = true;
+                    break;
+                }
+            }
+            if (!flag) {
+                stack.pop();
+            }
+        }
+    }
+
+    /**
+     * recursive
+     */
+    static void dfs2(int point) {
+        visited[point] = true;
+        System.out.print(point + " ");
+
+        // map을 순회하며 간선을 확인 후 연결되어 있는 정점이 있다면 거기서부터 다시 시작
+        for (int i = 0; i <= N; i++) {
+            if (map[point][i] == 1 && visited[i] == false) {
+                dfs2(i);
+            }
+        }
     }
 }
