@@ -117,6 +117,12 @@
     - DFS와 BFS의 기본 동작원리를 연습하는 좋은 문제였다.
     - [https://wooody92.github.io/algorithm/Algorithm-BFS%EC%99%80-DFS/](https://wooody92.github.io/algorithm/Algorithm-BFS%EC%99%80-DFS/)
 
+13. [1254 - 팰린드롬 만들기](https://www.acmicpc.net/problem/1254)
+
+    - [Solution]
+    - 팰린드롬인지 확인하는 메서드, 문자열을 뒤집는 메서드, 뒤집은 문자열을 기존 문자열에 붙이는 메서드를 이용하여 풀이하였다.
+    - [참고링크](https://m.blog.naver.com/PostView.nhn?blogId=occidere&logNo=221190032874&proxyReferer=https:%2F%2Fwww.google.com%2F)
+
 <br><br>
 
 ## Programmers
