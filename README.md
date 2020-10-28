@@ -771,5 +771,6 @@
 41. [12973 - 짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973?language=java)
 
     - [Solution]
-    - 
+    - 주어진 문자열 길이의 조건을 보면 1,000,000이다. 효율성을 생각해서 풀이하여야 한다.
+    - 시간복잡도를 낮추기 위한 스택 자료구조의 장점이 돋보이는 문제였다.
 
